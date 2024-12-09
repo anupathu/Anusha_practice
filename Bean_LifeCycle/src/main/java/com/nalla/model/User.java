@@ -2,11 +2,11 @@ package com.nalla.model;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-@configuration
+@component
 public class User {
-	@Value(value = "949")
+	@Value(value = "123")
 	private Integer id;
-	@Value(value = "anusha")
+	@Value(value = "naresh")
 	private String name;
 	public Integer getId() {
 		return id;
