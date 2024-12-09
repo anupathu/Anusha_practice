@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 import com.nalla.model.User;
 
-@Component
+@configuration
 @Scope(scopeName)
 
 public class DatabaseInitiaizer {
@@ -30,11 +30,11 @@ public class DatabaseInitiaizer {
 
 	@PreDestroy
 	public void destroy() {
-     // just before Spring removes our bean from the application
-		System.out.println("Deleted user details");
+    		System.out.println("Deleted user details");
 		
 	}
 	public void close() {
 		System.out.println("before container closed bean is being to destoryed");
+                System.out.println("completed");
 	}
 }
